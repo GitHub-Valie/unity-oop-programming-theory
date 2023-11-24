@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere : Shape
+public class Sphere : Shape // Inheritance
 {
-    public override void DisplayText()
+    void Start()
     {
-        Debug.Log("Child class Sphere of parent class Shape"); // Polymorphism
+        ShapeType = "Sphere";
+        ShapeColor = Color.green;
+    }
 
-        // Implement a better way of printing on screen
+    public override void DisplayText() // Polymorphism
+    {
+        Debug.Log("Child class Sphere of parent class Shape"); 
+        DisplayText(ShapeType);
     }
 }

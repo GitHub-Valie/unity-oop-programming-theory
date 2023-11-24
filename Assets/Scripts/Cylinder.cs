@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cylinder : Shape
+public class Cylinder : Shape // Inheritance
 {
-    public override void DisplayText()
+    void Start()
     {
-        Debug.Log("Child class Cylinder of parent class Shape"); // Polymorphism
+        ShapeType = "Cylinder";
+        ShapeColor = Color.blue;
+    }
 
-        // Implement a better way of printing on screen
+    public override void DisplayText() // Polymorphism
+    {
+        Debug.Log($"Child class Cylinder of parent class Shape"); 
+        DisplayText(ShapeType);
     }
 }

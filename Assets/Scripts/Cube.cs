@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cube : Shape
+public class Cube : Shape // Inheritance
 {
-    public override void DisplayText()
+    void Start()
     {
-        Debug.Log("Child class Cube of parent class Shape"); // Polymorphism
+        ShapeType = "Cube";
+        ShapeColor = Color.red;
+    }
 
-        // Implement a better way of printing on screen
+    public override void DisplayText() // Polymorphism
+    {
+        Debug.Log("Child class Cube of parent class Shape"); 
+        DisplayText(ShapeType);
     }
 }

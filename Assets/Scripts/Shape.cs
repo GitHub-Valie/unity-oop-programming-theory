@@ -5,17 +5,25 @@ using UnityEngine.UI;
 
 public class Shape : MonoBehaviour
 {
-    private string shapeType;
-    private Color shapeColor;
+    string shapeType;
+    Color shapeColor;
+    public Text textToDisplay;
 
-    public virtual void DisplayText()
+    /* Encapsulation: turn the variables into Properties by adding get/set accessors */
+    public string ShapeType { get { return shapeType; } set { shapeType = value; } }
+    public Color ShapeColor { get { return shapeColor; } set { shapeColor = value; } }
+
+    public virtual void DisplayText() // Polymorphism
     {
-        Debug.Log("Parent class Shape"); // Polymorphism  
-        
-        // Implement a better way of printing on screen
+        Debug.Log("Parent class Shape"); 
+        textToDisplay.text = "Shape";
+    }
+    public void DisplayText(string ShapeType) // Abstraction
+    {
+        textToDisplay.text = $"{ShapeType}";
     }
 
-    private void OnMouseDown()
+    private void OnMouseDown() // Abstraction
     {
         DisplayText();
     }
