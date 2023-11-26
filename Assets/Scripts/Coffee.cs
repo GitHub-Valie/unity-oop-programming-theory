@@ -10,7 +10,7 @@ public class Coffee : MonoBehaviour
     bool isHot; // Display hot/cold type of coffee
     public Text textDisplay;
 
-    public string CoffeeType { get { return coffeeType; } set { coffeeType = value; } }
+    public string CoffeeType { get { return coffeeType; } set { coffeeType = value; } } // Encapsulation
     public string CoffeeSize { get { return coffeeSize; } set { coffeeSize = value; } }
     public bool IsHot { get { return isHot; } set { isHot = value; } }
 
@@ -19,7 +19,7 @@ public class Coffee : MonoBehaviour
         DisplayInfo(CoffeeType);
     }
 
-    public void DisplayInfo(string CoffeeType)
+    public void DisplayInfo(string CoffeeType) // Abstraction
     {
         textDisplay.text = $"{CoffeeType}";
         if (CoffeeSize != null)
