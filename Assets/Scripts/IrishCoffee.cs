@@ -7,5 +7,11 @@ public class IrishCoffee : Coffee
     void Start()
     {
         CoffeeType = "Irish Coffee";
+        Ingredients();
+    }
+
+    public override void Ingredients()
+    {
+        CoffeeIngredients = new string[] {"Coffee", "Whisky", "Sugar", "Cream"};
     }
 }

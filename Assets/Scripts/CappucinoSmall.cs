@@ -8,5 +8,9 @@ public class CappucinoSmall : Cappucino
     {
         CoffeeType = "Cappucino";
         CoffeeSize = "Small";
+        Ingredients(); // Call method inherited from Cappucino
     }
+
+    /* Because CappucinoSmall has the same ingredients as a regular Cappucino 
+    (parent class), no need to override the Ingredients() method here */
 }

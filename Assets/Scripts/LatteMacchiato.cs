@@ -7,5 +7,10 @@ public class LatteMacchiato : Coffee
     void Start()
     {
         CoffeeType = "Latte Macchiato";
+        Ingredients();
+    }
+    public override void Ingredients()
+    {
+        CoffeeIngredients = new string[] {"Espresso", "Steamed milk", "Milk foam"};
     }
 }
