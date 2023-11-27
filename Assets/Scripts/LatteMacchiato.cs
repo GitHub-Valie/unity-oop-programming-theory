@@ -9,7 +9,7 @@ public class LatteMacchiato : Coffee
         CoffeeType = "Latte Macchiato";
         Ingredients();
     }
-    public override void Ingredients()
+    public override void Ingredients() // Polymorphism
     {
         CoffeeIngredients = new string[] {"Espresso", "Steamed milk", "Milk foam"};
     }

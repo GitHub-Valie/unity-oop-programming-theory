@@ -2,16 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlackCoffee : Coffee
+public class BlackCoffeePaper : BlackCoffee
 {
     void Start()
     {
         CoffeeType = "Black Coffee";
+        CoffeeContainer = "Paper";
         Ingredients();
-    }
-
-    public override void Ingredients() // Polymorphism
-    {
-        CoffeeIngredients = new string[] {"Coffee"};
     }
 }

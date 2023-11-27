@@ -8,7 +8,7 @@ public class BlackCoffeeSmall : BlackCoffee
     {
         CoffeeType = "Black Coffee";
         CoffeeSize = "Small";
-        Ingredients(); // Call method inherited from BlackCoffee
+        Ingredients(); // Inheritance: Call method inherited from BlackCoffee
     }
 
     /* Because a BlackCoffeeSmall has the same ingredients as a regular BlackCoffee 

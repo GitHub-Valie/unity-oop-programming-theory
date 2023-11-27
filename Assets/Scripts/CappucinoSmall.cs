@@ -8,7 +8,7 @@ public class CappucinoSmall : Cappucino
     {
         CoffeeType = "Cappucino";
         CoffeeSize = "Small";
-        Ingredients(); // Call method inherited from Cappucino
+        Ingredients(); // Inheritance: Call method inherited from Cappucino
     }
 
     /* Because CappucinoSmall has the same ingredients as a regular Cappucino 

@@ -10,7 +10,7 @@ public class IrishCoffee : Coffee
         Ingredients();
     }
 
-    public override void Ingredients()
+    public override void Ingredients() // Polymorphism
     {
         CoffeeIngredients = new string[] {"Coffee", "Whisky", "Sugar", "Cream"};
     }
